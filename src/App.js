@@ -6,8 +6,9 @@ import BookmarksContext from './BookmarksContext';
 import Nav from './Nav/Nav';
 import config from './config';
 import './App.css';
+import Rating from './Rating/Rating';
 
-const bookmarks = [
+// const bookmarks = [
   // {
   //   id: 0,
   //   title: 'Google',
@@ -29,7 +30,7 @@ const bookmarks = [
   //   rating: '4',
   //   desc: 'brings together the world\'s largest community of developers.'
   // }
-];
+// ];
 
 class App extends Component {
   state = {
@@ -85,6 +86,7 @@ class App extends Component {
     };
     return (
       <main className='App'>
+        <Rating />
         <h1>Bookmarks!</h1>
         <BookmarksContext.Provider value={contextValue}>
           <Nav />
